@@ -92,7 +92,7 @@ a {
   border-radius: 5px;
 }
 .index-jumbotron {
-  background-color: rgb(118, 159, 231);
+  background-color: rgb(38 12 51 / 65%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -100,7 +100,8 @@ a {
   padding: 50px 50px;
 }
 .index-jumbotron h1 {
-  color: white
+  color: white;
+  font-family: fantasy;
 }
 .index-jumbotron form {
   position: relative;
@@ -175,12 +176,20 @@ a {
 }
 .ajax-section {
   margin: 70px 0 20px;
+  display:none;
 }
 
 .ajax-section .cities {
   display: grid;
   grid-gap: 0px 20px;
   grid-template-columns: repeat(1, 1fr);
+  border-radius: 10px;
+  border: 2px solid papayawhip;
+  margin: auto;
+  padding: 24px;
+  font-family: fantasy;
+  font-size: xx-large;
+  color: orange;
 }
 
 .ajax-section .city {

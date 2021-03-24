@@ -22,10 +22,12 @@ $('#address').on('click', function(event) {
         $('.spinner-border ').hide();
         $('.cities').html('');
         if (response.error) {
+          $('.ajax-section').hide();
           const markup = "Please search for a valid city 😩";
           $('.msg').html(markup);
         }
         else {
+          $('.ajax-section').show();
           const markup = `<h2 class="city-name" data-name="${response.location}"><span>${response.location}</span></h2><div class="city-temp">${response.data}</div>`
           $('.cities').append(markup);
         }
